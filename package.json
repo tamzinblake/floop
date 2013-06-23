@@ -1,0 +1,23 @@
+{
+  "name": "floop",
+  "version": "0.0.0",
+  "description": "Functional for-loop implementation in JS",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/thomblake/floop.git"
+  },
+  "keywords": [
+    "semicolon",
+    "for",
+    "loop"
+  ],
+  "author": "Thom Blake",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/thomblake/floop/issues"
+  }
+}
