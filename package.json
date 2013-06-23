@@ -4,7 +4,7 @@
   "description": "Functional for-loop implementation in JS",
   "main": "index.js",
   "scripts": {
-    "test": "mocha"
+    "test": "./node_modules/.bin/mocha"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,9 @@
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/thomblake/floop/issues"
+  },
+  "devDependencies": {
+    "chai": "~1.7.0",
+    "mocha": "~1.11.0"
   }
 }
