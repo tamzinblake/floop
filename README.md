@@ -14,7 +14,7 @@ npm install floop
 
 ```javascript
 var floop = require('floop')
-floop(initialization ,condition ,final_expression ,body ,context)
+floop(condition ,body ,final_expression ,initialization ,context)
 ```
 
 Examples:
@@ -38,7 +38,7 @@ Examples:
     console.log(i)
   }
   
-  floop(initialization ,condition ,final_expression ,body)
+  floop(condition ,body ,final_expression ,initialization)
 })()
 ```
 
@@ -62,9 +62,39 @@ function body (context) {
   return context.sum
 }
 
-floop(initialization ,condition ,final_expression ,body ,context)
-```  
+  floop(condition ,body ,final_expression ,initialization ,context)
+```
+
+```javascript
+;(function () {
+  var i = 0
+  floop( function () { i < 5 }
+       , function () { console.log(i) }
+       , function () { i++ }
+       )
+})()
+```
+
+```javascript
+//nice minimal syntax
+;(function () {
+  var i = 0
+  floop(function () { i < 5 }, function () {
+    console.log(i)
+    i++
+  })
+})()
+```
+
+```javascript
+//loops forever
+floop()
+```
 
 ## License
 
 MIT License
+
+## Final note
+
+Seriously, never use this.

@@ -23,8 +23,12 @@ describe('floop' ,function() {
       return context.sum
     }
 
-    var result = floop(initialization ,condition ,final_expression ,body
-                      ,context)
+    var result = floop( condition
+                      , body
+                      , final_expression
+                      , initialization
+                      , context
+                      )
 
     assert.equal(result ,2)
   })
