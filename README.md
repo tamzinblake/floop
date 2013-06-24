@@ -46,6 +46,7 @@ Examples:
 var context = {}
 function initialization (context) {
   context.i = 0
+  context.sum = 0
 }
 
 function condition (context) {
