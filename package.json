@@ -16,7 +16,12 @@
     "loop"
   ],
   "author": "Thom Blake",
-  "license": "MIT",
+  "licenses": [
+    {
+      "type": "Affero General Public License v3",
+      "url": "http://www.gnu.org/licenses/agpl-3.0.html"
+    }
+  ],
   "bugs": {
     "url": "https://github.com/thomblake/floop/issues"
   },
