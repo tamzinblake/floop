@@ -1,6 +1,6 @@
 {
   "name": "floop",
-  "version": "0.2.1",
+  "version": "0.2.2",
   "description": "Functional for-loop implementation in JS",
   "main": "index.js",
   "scripts": {
