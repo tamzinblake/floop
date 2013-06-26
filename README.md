@@ -93,7 +93,7 @@ floop()
 
 ## License
 
-MIT License
+AGPL
 
 ## Final note
 
