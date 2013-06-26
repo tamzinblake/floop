@@ -50,7 +50,7 @@ function initialization (context) {
 }
 
 function condition (context) {
-  context.i < 2
+  return context.i < 2
 }
 
 function final_expression (context) {
@@ -68,7 +68,7 @@ function body (context) {
 ```javascript
 ;(function () {
   var i = 0
-  floop( function () { i < 5 }
+  floop( function () { return i < 5 }
        , function () { console.log(i) }
        , function () { i++ }
        )
@@ -79,7 +79,7 @@ function body (context) {
 //nice minimal syntax
 ;(function () {
   var i = 0
-  floop(function () { i < 5 }, function () {
+  floop(function () { return i < 5 } ,function () {
     console.log(i)
     i++
   })
